@@ -1,19 +1,23 @@
 ---
 layout: post
 title: 初来乍到
-subtitle: 尝试表现得很熟练
-cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/thumb.png
-share-img: /assets/img/path.jpg
-tags: [books, test]
+subtitle: 记录一些心得
+tags: [网站]
 ---
 
-Under what circumstances should we step off a path? When is it essential that we finish what we start? If I bought a bag of peanuts and had an allergic reaction, no one would fault me if I threw it out. If I ended a relationship with a woman who hit me, no one would say that I had a commitment problem. But if I walk away from a seemingly secure route because my soul has other ideas, I am a flake?
-
-The truth is that no one else can definitively know the path we are here to walk. It’s tempting to listen—many of us long for the omnipotent other—but unless they are genuine psychic intuitives, they can’t know. All others can know is their own truth, and if they’ve actually done the work to excavate it, they will have the good sense to know that they cannot genuinely know anyone else’s. Only soul knows the path it is here to walk. Since you are the only one living in your temple, only you can know its scriptures and interpretive structure.
-
-At the heart of the struggle are two very different ideas of success—survival-driven and soul-driven. For survivalists, success is security, pragmatism, power over others. Success is the absence of material suffering, the nourishing of the soul be damned. It is an odd and ironic thing that most of the material power in our world often resides in the hands of younger souls. Still working in the egoic and material realms, they love the sensations of power and focus most of their energy on accumulation. Older souls tend not to be as materially driven. They have already played the worldly game in previous lives and they search for more subtle shades of meaning in this one—authentication rather than accumulation. They are often ignored by the culture at large, although they really are the truest warriors.
-
-A soulful notion of success rests on the actualization of our innate image. Success is simply the completion of a soul step, however unsightly it may be. We have finished what we started when the lesson is learned. What a fear-based culture calls a wonderful opportunity may be fruitless and misguided for the soul. Staying in a passionless relationship may satisfy our need for comfort, but it may stifle the soul. Becoming a famous lawyer is only worthwhile if the soul demands it. It is an essential failure if you are called to be a monastic this time around. If you need to explore and abandon ten careers in order to stretch your soul toward its innate image, then so be it. Flake it till you make it.
 哈哈，想来也是，大家都是初来乍到，只不过是“愿意多做”和“懒得多做”的区别。
-  
+
+在此记录一下建立github托管网站的心得。
+对于我将来主要使用的post功能，有以下几点：
+1. 提交md文件到_post文件夹，文件命名须使用英文，形式为#2023-03-13-标题#这种形式。
+2. 在md文件头部，需要
+---
+layout: post
+title: Flake it till you make it
+subtitle: Excerpt from Soulshaping by Jeff Brown
+cover-img: /assets/img/path.jpg
+tags: [books, test]
+---
+3. post使用的图片分为：封面图片cover-img，缩略图thumbnail-img（默认与封面图相同），分享到社交网站上显示的图片share-img。
+4. 添加图片的格式如下：thumbnail-img: /assets/img/thumb.png
+5. 如果想要添加额外的栏目，可以在_config.yml中navbar-links添加，基本是一些链接或者pdf。
