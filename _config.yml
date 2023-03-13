@@ -24,7 +24,7 @@ author: Kai
 
 navbar-links:
   About Me: "aboutme"
-  Blog:
+  Blog: "blog"
   Resources:
     - Learn markdown: "https://www.markdowntutorial.com/"
   #Author's home: "https://deanattali.com"
