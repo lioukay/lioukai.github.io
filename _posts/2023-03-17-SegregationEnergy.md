@@ -30,9 +30,10 @@ Soap = QUIP.calc(model)
 It should be noted there are one (or two) problem(s) in the document they provided.
 1. the number of samples in file GB_SOAP_Al_Mg.npy is not consistent with that in file seg_energies_Al_Mg.txt. So when making use of the notebook, the SOAP should be recalculated by yourself.
 2. in the latest version of OVITO package, some of the methods are greatly changed. So modifications on function get_gb_ids_and_indices(polycrystal) are needed, as is shown below.
+
+
 ```python
 node.modifiers.append(ov.modifiers.ExpressionSelectionModifier(expression="StructureType == %i"%(t)))
-
 select = data.particles['Selection']   
 pid = data.particles['Particle Identifier']
 ```
