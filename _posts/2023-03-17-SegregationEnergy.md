@@ -4,6 +4,7 @@ title: Segregation energy at grain boundary
 subtitle: Learn from literature
 tags: [GB,SOAP,MD]
 comments: true
+mathjax: true
 ---
 
 In alloys, atoms of type A could be replaced by another type of atoms, let's say, B. The replacement would cause a difference in energy. For sites in bulk, the $\Delta E$ is a constant in dilute alloy. However, for sites at grain boundaries (GBs), $\Delta E$ is no longer a single value for the complexity of local atomic environments. Malik Wagih (supervised by Christopher A. Schuh), showed the spectrum of $\Delta E$ with molecular dynamic.
