@@ -2,7 +2,7 @@
 layout: post
 title: Segregation energy at grain boundary
 subtitle: Learn from literature
-tags: [GB],[SOAP],[MD]
+tags: [GB,SOAP,MD]
 comments: true
 ---
 
