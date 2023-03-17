@@ -18,25 +18,24 @@ Beyond calculating the energy spectrum, the researcher managed to build a connec
 
 1. describe local atomic environments with SOAP
 the code looks like these:
-'''
+```python
 import ase.io 
 from quippy import descriptors
 model = ase.io.read(filename,format="lammps-data",style="atomic",Z_of_type={1:13})
 QUIP = descriptors.Descriptor("soap cutoff=8 l_max=10 n_max=10 atom_sigma=1.0 n_Z=1 Z={29}")
 Soap = QUIP.calc(model)
-'''
+```
 2. Do machine learning with sklearn package. There are tremendous tutorials about that.
 
 It should be noted there are one (or two) problem(s) in the document they provided.
 1. the number of samples in file GB_SOAP_Al_Mg.npy is not consistent with that in file seg_energies_Al_Mg.txt. So when making use of the notebook, the SOAP should be recalculated by yourself.
 2. in the latest version of OVITO package, some of the methods are greatly changed. So modifications on function get_gb_ids_and_indices(polycrystal) are needed, as is shown below.
-'''
+```python
 node.modifiers.append(ov.modifiers.ExpressionSelectionModifier(expression="StructureType == %i"%(t)))
 
 select = data.particles['Selection']   
 pid = data.particles['Particle Identifier']
-nparticles = data.particles.count
-'''
+```
 
 All in all, that is excellent work! 
 The title of the thesis is Learning Grain Boundary Segregation Energy Spectra in Polycrystals.
