@@ -23,3 +23,4 @@ tags: [books, test]
 3. post使用的图片分为：封面图片cover-img，缩略图thumbnail-img（默认与封面图相同），分享到社交网站上显示的图片share-img。
 4. 添加图片的格式如下：thumbnail-img: /assets/img/thumb.png
 5. 如果想要添加额外的栏目，可以在_config.yml中navbar-links添加，基本是一些链接或者pdf。
+6. 添加tag时，多个tag的形式是：[tag1,tag2,tag3]
