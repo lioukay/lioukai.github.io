@@ -2,7 +2,7 @@
 layout: post
 title: SNAP势函数训练集构型的选择
 subtitle: 机器学习势函数入门
-tags: [想法]
+tags: [potential,势函数]
 comments: true
 ---
 使用VASP进行第一性原理计算，从而进行势函数拟合已经成为一种routine。Shyue Ping Ong教授在2019年的文章《Unravelling Complex Strengthening Mechanisms in the NbMoTaW Multi-Principal Element Alloy with Machine Learning Potentials》中使用 spectral neighbor analysis potential（SNAP），一种基于原子局部环境的机器学习势函数拟合了多组元合金的势。尤为可贵的是他们公布了拟合使用的训练集，见https://github.com/materialsvirtuallab/snap 这个工作很好地展示了应当如何有效地选择训练集，具有借鉴意义。
