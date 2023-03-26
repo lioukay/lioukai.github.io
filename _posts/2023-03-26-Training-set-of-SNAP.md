@@ -5,7 +5,7 @@ subtitle: 机器学习势函数入门
 tags: [想法]
 comments: true
 ---
-使用VASP进行第一性原理计算，从而进行势函数拟合已经成为一种routine。Shyue Ping Ong教授在2019年的文章《Unravelling Complex Strengthening Mechanisms in the NbMoTaW Multi-Principal Element Alloy with Machine Learning Potentials》中使用 spectral neighbor analysis potential（SNAP），一种基于原子局部环境的机器学习势函数拟合了多组元合金的势。尤为可贵的是他们公布了拟合使用的训练集，见https://github.com/materialsvirtuallab/snap。这个工作很好地展示了应当如何有效地选择训练集，具有借鉴意义。
+使用VASP进行第一性原理计算，从而进行势函数拟合已经成为一种routine。Shyue Ping Ong教授在2019年的文章《Unravelling Complex Strengthening Mechanisms in the NbMoTaW Multi-Principal Element Alloy with Machine Learning Potentials》中使用 spectral neighbor analysis potential（SNAP），一种基于原子局部环境的机器学习势函数拟合了多组元合金的势。尤为可贵的是他们公布了拟合使用的训练集，见https://github.com/materialsvirtuallab/snap 这个工作很好地展示了应当如何有效地选择训练集，具有借鉴意义。
 
 该数据集使用JSON格式储存第一性原理计算数据，包括计算设置、原子位置、原子受力、体系总应力和体系能量，其中原子位置使用经典坐标系和分数坐标系两种方法给出。将json文件转换成可视化软件OVITO可读取的软件，然后就能看到各种构型设置。
 
@@ -16,5 +16,7 @@ comments: true
 - 从头算分子动力学（AIMD），即让原子动起来。包含120个数据点。每个模型包含108原子。注意到不同模型中的原子并没有对应关系，可能只是添加了随机扰动，然后计算单点能。
 对于以上所有的计算，势函数为Cu_pv，截断能为520ev，K_prod(也即Kpoints与模型对应方向尺寸的乘积)为40。
 
-
-
+对于两组元体系，以Ni-Mo为例，数据集包括三部分：
+- Ni中Ni被Mo置换；包含1668个数据点。数据点分为“未弛豫”与“已弛豫”两组，未弛豫即基于Ni晶格直接置换，已弛豫中单胞的形状与体积均有变化。置换原子数量从1到32不等，较多的有：4，5，9，13，17，21，25。
+- Mo中Mo被Ni置换；包含918个数据点。数据点分为“未弛豫”与“已弛豫”两组。模型大小有16和54两种。对于16大小的模型，置换数量有0，2，4，6，8，10，12，14，16。对于54模型，置换数量有2，3，4。
+- Ni-Mo金属间化合物
